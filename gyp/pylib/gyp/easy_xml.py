@@ -117,7 +117,7 @@ def WriteXmlIfChanged(content, path, encoding='utf-8', pretty=False,
     xml_string = xml_string.replace('\n', '\r\n')
   
   # Fix encoding
-  xml_string = unicode(xml_string, 'latin-1').encode(encoding)
+  xml_string = unicode(xml_string, 'Windows-1251').encode(encoding)
 
   # Get the old content
   try:
